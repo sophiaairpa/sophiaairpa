@@ -1,0 +1,30 @@
+.awards {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    .award {
+        text-align: center;
+        .part-img {
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 50px;
+            img {
+                width: 90px;
+                transition: 0.6s;
+            }
+            h3 {
+                font-size: 17px;
+                font-weight: 500;
+                font-family: $body;
+                margin-bottom: 0;
+                padding: 15px 0;
+                line-height: 23px;
+                color: #555;
+            }
+            &:hover {
+                img {
+                    filter: grayscale(0%);
+                }
+            }
+        }
+    }
+}

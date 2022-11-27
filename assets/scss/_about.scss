@@ -1,0 +1,46 @@
+.about {
+    padding: 120px 0;
+    .part-img {
+        img {
+            width: 100%;
+        }
+    }
+    .part-txt {
+        .title {
+            p {
+                font-size: 18px;
+                text-transform: uppercase;
+                color: $color1;
+                font-weight: 500;
+                margin-top: -7px;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 55px;
+                color: $color2;
+                margin-bottom: 30px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding: 0;
+            margin-bottom: 40px;
+            li {
+                list-style: none;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+                font-weight: 500;
+                i {
+                    margin-right: 10px;
+                    color: $color1;
+                }
+            }
+        }
+    }
+}

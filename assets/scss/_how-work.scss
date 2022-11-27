@@ -1,0 +1,41 @@
+.how-its {
+    padding-top: 120px;
+    padding-bottom: 110px;
+    .part-box {
+        text-align: center;
+        padding: 0 20px;
+        &.after {
+            position: relative;
+            &:after {
+                position: absolute;
+                content: "";
+                top: -20px;
+                left: 80%;
+                width: 50%;
+                height: 50%;
+                background: url(../images/after.png) center center no-repeat;
+                background-size: contain;
+            }
+        }
+        .part-img {
+            margin: 0 auto;
+            margin-bottom: 30px;
+            img {
+                width: 90px;
+            }
+        }
+        .part-txt {
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.service {
+    background: $sky;
+    padding: 120px 0;
+    .part-txt {
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 50px;
+        }
+        h6 {
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            span {
+                float: right;
+            }
+        }
+        .progress {
+            margin-bottom: 30px;
+            height: 5px;
+            background: $color;
+            overflow: visible;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .progress-bar {
+                background-color: $white;
+                position: relative;
+                overflow: visible;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    top: -3px;
+                    right: 0;
+                    width: 11px;
+                    height: 11px;
+                    background: $color1;
+                    border-radius: 50%;
+                }
+                &.progress-bar-striped {
+                    background-image: linear-gradient(45deg,$color1 25%,transparent 25%,transparent 50%,$color1 50%,$color1 75%,transparent 75%,transparent);
+                }
+            }
+        }
+    }
+    .part-img {
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.team {
+    padding: 120px 0;
+    background: $sky;
+    .member {
+        position: relative;
+        overflow: hidden;
+        transition: 0.6s;
+        .part-img {
+            img {
+                width: 100%;
+            }
+        }
+        .part-txt {
+            position: absolute;
+            bottom: -54px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transition: 0.6s;
+            p {
+                font-size: 15px;
+                line-height: 30px;
+                color: $white;
+                text-transform: uppercase;
+                padding-top: 5px;
+                margin-bottom: 0;
+                position: relative;
+                z-index: 2;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 52px;
+                    width: 130px;
+                    height: 100%;
+                    background: $color1;
+                    border-radius: 5px 0 0 0;
+                    transform: skew(-5deg);
+                    z-index: -1;
+                }
+                &:before {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    right: 52px;
+                    width: 130px;
+                    height: 100%;
+                    background: $color1;
+                    border-radius: 0 5px 0 0;
+                    transform: skew(5deg);
+                    z-index: -1;
+                }
+            }
+            h3 {
+                color: $color2;
+                background: $white;
+                border-top: 3px solid $color1;
+                margin-bottom: 0;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: capitalize;
+                padding: 15px 0;
+            }
+        }
+        .social {
+            position: absolute;
+            top: 10px;
+            right: -37px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: $white;
+            padding: 10px 0;
+            border-radius: 5px 0 0 5px;
+            transition: 0.6s;
+            i {
+                display: inline-block;
+                font-size: 16px;
+                padding: 10px;
+                color: $color1;
+                transition: 0.6s;
+                &:hover {
+                    color: $color2;
+                }
+            }
+        }
+        &:hover {
+            box-shadow: 0px 5px 15px -5px $black;
+            .part-txt {
+                bottom: 0;
+            }
+            .social {
+                right: 0;
+            }
+        }
+    }
+}
